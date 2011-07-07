@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/bin/php /www/htdocs/mad_cache/mc_tools.php gc

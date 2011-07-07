@@ -1,6 +1,18 @@
 <?php
-	require_once("MadCache-current.php");
-	$action = $argv[1];
+	/**
+	 * Consider moving this file to an admin folder if you are going to have it accessible via
+	 * the web.
+	 */
+	 
+	require_once("/path/to/MadCache-0.5.inc.php");
+	if ( isSet($argv[1]) )
+		$action = $argv[1];
+	elseif ( isSet($_GET['action']) )
+		$action = $_GET['action'];
+	else
+		$action = "none";
+		
+	
 	switch($action)
 	{
 		CASE 'gc':

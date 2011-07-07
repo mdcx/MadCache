@@ -1,2 +1,7 @@
 #!/bin/sh
-/usr/local/bin/php /www/htdocs/mad_cache/mc_tools.php gc
+
+# Uncomment the following line if you are able to delete the files inside of ./cache_files
+# /usr/local/bin/php /www/htdocs/mad_cache/mc_tools.php gc
+
+# If not, use the web version.
+# wget http://path.com/to/mc-tools.php?action=gc&num=5

@@ -1,0 +1,12 @@
+# MadCache 0.5
+
+# Setup
+Open MadCache0.5.inc.php change your BASE_PATH to the path to your cache_files folder.
+
+Change the cache_files folder to 777 permissions (or any permissions on your server
+that the webserver can write. (NOTE: If your server (www-data, apache, nobody, etc) writes
+the files, please be sure that you can delete them. Sometimes you're not able to on
+a managed host.)
+
+Setup a crontab for doing Garbage Collection
+- 
